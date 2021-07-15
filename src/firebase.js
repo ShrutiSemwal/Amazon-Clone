@@ -10,6 +10,13 @@ import firebase from 'firebase';
     appId: "1:793319495425:web:90fbade714bbeecbf9ad00"
   });
 
+  const db= firebaseApp.firestore();
   const auth= firebase.auth();
 
-  export {auth};
+  if (!firebase.apps.length) {
+    firebase.initializeApp({});
+ }else {
+    firebase.app(); // if already initialized, use that one
+ }
+
+  export {db, auth};
