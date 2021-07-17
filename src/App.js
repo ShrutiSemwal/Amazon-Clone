@@ -16,7 +16,7 @@ import {auth} from './firebase';
 import {loadStripe} from '@stripe/stripe-js';
 import {Elements} from '@stripe/react-stripe-js';
 
-const promise = loadStripe("pk_test_51J7B7HSDFwigtwEw2EBRuI5WVv7J4RkAf2UhI8KYeFWl68cKFlAfTb4RBZTt7LK5rsXUrMjle2fEgw9NbLGjkkFV006rs5KEW7");
+const promise = loadStripe("Your_API_Key");
 
 function App() {
    
